@@ -141,6 +141,10 @@ svg {
   letter-spacing: .4em;
 }
 
+.description {
+  line-height: 150%;
+}
+
 .new-price {
   font-family: var(--ff-fraunces);
   color: var(--dark-cyan);

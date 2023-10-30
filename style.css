@@ -17,6 +17,7 @@
   /* Colors */
   --bg-color: hsl(30, 38%, 92%);
   --dark-cyan: hsl(158, 36%, 37%);
+  --darker-cyan: hsl(157, 46%, 17%);
   --dark-blue: hsl(212, 21%, 14%);
   --bluish-gray: hsl(228, 12%, 48%);
   --white: hsl(0, 0%, 100%);
@@ -39,10 +40,6 @@
   .text {
     font-family: var(--ff-montserrat);
     color: var(--bluish-gray);
-  }
-
-  .bg-button {
-    background-color: var(--dark-cyan);
   }
 
   .fs-300 {
@@ -162,9 +159,17 @@ svg {
   font-family: var(--ff-montserrat);
   font-weight: var(--fw-700);
   color: var(--white);
+  background-color: var(--dark-cyan);
   padding-block: .9rem;
   border: none;
   border-radius: .6em;
+  cursor: pointer;
+  transition: background 200ms;
+}
+
+.add:hover,
+.add:focus-visible {
+   background-color: var(--darker-cyan) !important; 
 }
 
 .add::before {

@@ -14,7 +14,11 @@
 
 <body>
   <section class="product-card">
-    <div aria-hidden="true" class="img"></div>
+    <div class="img-container">
+      <img src="images/image-product-mobile.jpg" alt="Perfume with a square bottle, with a label in the center with the perfume's name written on it." class="img mobile">
+      
+      <img src="images/image-product-desktop.jpg" alt="Perfume with a square bottle, with a label in the center with the perfume's name written on it." class="img desktop">
+    </div>
 
     <div class="content">
       <p class="category text fs-300">PERFUME</p>
@@ -26,11 +30,11 @@
         Perfumer-Creator for the House of CHANEL.</p>
 
       <div aria-label="Price" class="prices flex-row flex-center mg-top-700">
-        <p class="new-price fs-600">$149.99</p>
+        <p class="new-price fs-600"><ins><em>$149.99</em></ins></p>
         <p aria-hidden="true" class="old-price text"><del>$169.99</del></p>
       </div>
 
-      <button class="add fs-400 mg-top-700">Add to Cart</button>
+      <button type="button" class="add fs-400 mg-top-700">Add to Cart</button>
     </div>
   </section>
 
